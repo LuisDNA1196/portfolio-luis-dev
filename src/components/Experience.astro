@@ -1,0 +1,28 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "December 2023",
+    title: "Secretaria de Turismo (SECTUR) Web Page − Secretaria Turismo",
+    description:
+      "I actively contributed to the creation and update of Secretaria de Turismo website and mobile app. I focused on enhancing user experience, streamlining processes, and providing an intuitive navigation. Me and my team developed advanced features, integrated modern technologies, and collaborated closely with end-users to ensure an effective digital presence and an improved user experience..",
+    link: "",
+  },
+  {
+    date: "January 2024",
+    title: "Medical Landing Page  − Freelance",
+    description:
+      "The creation of a personalized landing page for a distinguished medical professional. Crafted with a focus on simplicity and functionality, the landing page not only reflects the doctor's expertise but also offers visitors a seamless experience.",
+  },
+]
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

@@ -4,6 +4,7 @@ import NextJS from "./icons/NextJS.astro"
 import React from "./icons/React.astro"
 import Tailwind from "./icons/Tailwind.astro"
 import Web from "./icons/Web.astro"
+import AstroIcon from "./icons/AstroIcon.astro"
 import LinkButton from "./LinkButton.astro"
 
 const TAGS = {
@@ -22,13 +23,18 @@ const TAGS = {
     class: "bg-[#103673] text-white",
     icon: React,
   },
+  ASTROICON: {
+    name: "Astro",
+    class: "bg-[#103673] text-white",
+    icon: AstroIcon,
+  },
 }
 const PROJECTS = [
   {
     title: "Secretaria de Turismo - WebPage for Secretaria de turimo",
     description:
       "An update of Sectur's webpage, enhancing user experience, and making registration easier for users.",
-    link: "https://svgl.vercel.app/",
+    link: '',
     github: "",
     image: "/projects/sectur.png",
     tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.REACT],
@@ -36,10 +42,11 @@ const PROJECTS = [
   {
     title: "Grupo Oncologico - Landing Page for Medical Doctor",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS",
-    link: "https://heupshop.vercel.app/",
-    image: "/projects/heuptienda.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "The creation of a personalized landing page for a distinguished medical professional.",
+    link: "https://grupo-oncologico.vercel.app/",
+    github: "https://github.com/LuisDNA1196/grupomedico",
+    image: "/projects/grupoonco.webp",
+    tags: [TAGS.ASTROICON, TAGS.NEXT, TAGS.TAILWIND],
   },
 ]
 ---
@@ -74,12 +81,12 @@ const PROJECTS = [
           {github && (
             <LinkButton href={github}>
               <GitHub class="size-6" />
-              Ver código fuente
+              Code
             </LinkButton>
           )}
           <LinkButton href={link}>
             <Web/>
-            Ir al sitio web
+            Web site
           </LinkButton>
         </footer>
       </article>

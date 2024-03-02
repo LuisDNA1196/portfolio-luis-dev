@@ -1,14 +1,14 @@
 ---
-import GitHub from "./icons/GitHub.astro"
-import NextJS from "./icons/NextJS.astro"
-import React from "./icons/React.astro"
-import Tailwind from "./icons/Tailwind.astro"
-import Web from "./icons/Web.astro"
-import AstroIcon from "./icons/AstroIcon.astro"
-import JavaScript from "./icons/JavaScript.astro"
-import Cesese from "./icons/Cesese.astro"
-import HTML from "./icons/Html.astro"
-import LinkButton from "./LinkButton.astro"
+import GitHub from "../icons/GitHub.astro"
+import NextJS from "../icons/NextJS.astro"
+import React from "../icons/React.astro"
+import Tailwind from "../icons/Tailwind.astro"
+import Web from "../icons/Web.astro"
+import AstroIcon from "../icons/AstroIcon.astro"
+import JavaScript from "../icons/JavaScript.astro"
+import Cesese from "../icons/Cesese.astro"
+import HTML from "../icons/Html.astro"
+import LinkButton from "../LinkButton.astro"
 
 const TAGS = {
   NEXT: {
@@ -49,36 +49,36 @@ const TAGS = {
 }
 const PROJECTS = [
   {
-    title: "Grupo Oncologico - Landing Page for Medical Doctor",
+    title: "Grupo Oncologico - Pagina Web para Medico Oncologo",
     description:
-    "Project was a collaborative effort aimed at creating a personalized landing page for a distinguished medical professional. The landing page was designed to showcase the doctor's expertise in oncology and his commitment to providing compassionate care to his patients.",
+    "El proyecto fue en conjunto con el medico con el objetivo de crear una página web totalmente personalizada.  La página web fue diseñada para destacar la experiencia del médico en oncología y su compromiso de brindar atención de calidad y empatica a sus pacientes.",
     link: "https://grupo-oncologico.vercel.app/",
     github: "https://github.com/LuisDNA1196/grupomedico",
     image: "/projects/grupoonco.webp",
     tags: [TAGS.ASTROICON, TAGS.JSICON, TAGS.TAILWIND],
   },
   {
-    title: "Secretaria de Turismo - WebPage for Secretaria de turimo",
+    title: "Secretaria de Turismo - WebPage para Secretaria de turimo",
     description:
-      'The "Secretaría de Turismo Web Page" project was aimed at overhauling and updating the Sectur website to provide visitors with a more seamless and user-friendly experience. The goal was to enhance user experience and simplify the registration process for users, ensuring that they could easily access and utilize the services offered by Sectur.',
+      'El proyecto "Página web de la Secretaría de Turismo" tenía como objetivo renovar y actualizar el sitio web de la Sectur para proporcionar a los visitantes una experiencia más fluida y fácil de usar. El objetivo era mejorar la experiencia del usuario y simplificar el proceso de registro para los usuarios, asegurando que pudieran acceder y utilizar fácilmente los servicios ofrecidos por la Sectur.',
     link: '',
     github: "",
     image: "/projects/sectur.webp",
     tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.REACT],
   },
   {
-    title: "Restaurant Landing Page",
+    title: "Pagina Web Restaurante/Negocio",
     description:
-      "The Restaurant Landing Page is a versatile and dynamic website template suitable for various businesses, including restaurants, cafes, bars, and more. Designed to captivate and engage visitors from the moment they arrive, the landing page features a modern and inviting layout.",
+      "La página web para restaurante es una plantilla de sitio web versátil y dinámica adecuada para diversos negocios, incluyendo restaurantes, cafeterías, bares, y más. Diseñada para cautivar y comprometer a los visitantes desde el momento en que llegan, la página de aterrizaje cuenta con un diseño moderno y atractivo.",
     link: "https://restaurant-landingpage-eta.vercel.app/",
     github: "https://github.com/LuisDNA1196/Restaurant-Landingpage",
     image: "/projects/restaurant.webp",
     tags: [TAGS.CSS, TAGS.REACT],
   },
   {
-    title: "HEUP Online Shop",
+    title: "HEUP Tienda Virtual",
     description:
-      " The HEUP Online Shop is a virtual store dedicated to the brand, Geek. The online shop features a wide range of geek-inspired products, including clothing, accessories, gadgets, and collectibles. The website is designed to provide an engaging and seamless shopping experience for customers, with user-friendly navigation and intuitive product categories.",
+      " La tienda en línea HEUP está dedicada al mundo Geek. La tienda en línea ofrece una amplia gama de productos inspirados en la cultura geek, incluyendo ropa, accesorios, gadgets y coleccionables. El sitio web está diseñado para proporcionar una experiencia de compra atractiva y sin interrupciones para los clientes, con una navegación fácil de usar y categorías de productos intuitivas.",
     link: "https://heupshop.vercel.app/",
     github: "https://github.com/LuisDNA1196/HEUPShop",
     image: "/projects/HEUP.webp",
@@ -118,13 +118,13 @@ const PROJECTS = [
           {github && (
             <LinkButton href={github}>
               <GitHub class="size-6" />
-              Code
+              Codigo
             </LinkButton>
           )}
           {link && (
             <LinkButton href={link}>
             <Web/>
-            Web site
+            Sitio Web
           </LinkButton>)}
           
         </footer>

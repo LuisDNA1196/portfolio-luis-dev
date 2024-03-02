@@ -1,26 +1,25 @@
 ---
-import Layout from "@/layouts/Layout.astro"
+import Layout from '../../layouts/Es/Layout.astro'
 
-
-import Sobremi from "@/components/Sobremi.astro"
-import Badge from "@/components/Badge.astro"
-import Briefcase from "@/components/icons/Briefcase.astro"
-import CodeIcon from "@/components/icons/Code.astro"
-import Experience from "@/components/Experience.astro"
-import GitHubIcon from "@/components/icons/GitHub.astro"
-import LinkedInIcon from "@/components/icons/LinkedIn.astro"
-import MailIcon from "@/components/icons/Mail.astro"
-import ProfileCheck from "@/components/icons/ProfileCheck.astro"
-import Contact from "@/components/icons/Contact.astro"
-import Projects from "@/components/Projects.astro"
-import SectionContainer from "@/components/SectionContainer.astro"
-import SocialPill from "@/components/SocialPill.astro"
-import Contactme from "@/components/Contactme.astro"
+import Sobremi from "../../components/Es/Sobremi.astro"
+import Experience from "../../components/Es/Experience.astro"
+import Projects from "../../components/Es/Projects.astro"
+import Contactme from "../../components/Es/Contactme.astro"
+import Badge from "../../components/Badge.astro"
+import Briefcase from "../../components/icons/Briefcase.astro"
+import CodeIcon from "../../components/icons/Code.astro"
+import GitHubIcon from "../../components/icons/GitHub.astro"
+import LinkedInIcon from "../../components/icons/LinkedIn.astro"
+import MailIcon from "../../components/icons/Mail.astro"
+import ProfileCheck from "../../components/icons/ProfileCheck.astro"
+import Contact from "../../components/icons/Contact.astro"
+import SectionContainer from "../../components/SectionContainer.astro"
+import SocialPill from "../../components/SocialPill.astro"
 ---
 
 <Layout
-  title="Porfolio de LuisDNA - Web Developer"
-  description="Hire Luis Narvaez to create your web or mobile app"
+  title="Porfolio de LuisDNA - Desarrollador y Programador Web "
+  description="Contrata a Luis Narvaez para crear tu aplicación web o móvil"
 >
   <main class="px-4">
     <SectionContainer class=" flex-wrap flex py-44 pb-20" id="Home">
@@ -32,7 +31,7 @@ import Contactme from "@/components/Contactme.astro"
       <h1
         class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10 mt-2"
       >
-        Hi, I'm Luis Narvaez <a
+        Hola, soy Luis Narvaez <a
           href="https://www.linkedin.com/in/luisdna96/"
           target="_blank"
           rel="noopener"
@@ -44,16 +43,15 @@ import Contactme from "@/components/Contactme.astro"
       <h2
         class="text-xl lg:text-2xl text-pretty max-w-[700px] text-white"
       >
-        <span>Front End</span><span
-          class="text-yellow-200"
-        >
-          Web Developer</span
-        >
+      <span class="text-yellow-200"
+      >
+        Desarrollador Web</span>
+        <span>Front End</span>
         .<span class="text-red-200">
-          From Guadalajara Mexico</span
+          De Guadalajara Mexico</span
         >.
         <span class="text-sky-200"
-          >Efficient and unique experiences</span
+          >Experiencias Unicas y eficientes.</span
         >
       </h2>
 
@@ -66,7 +64,7 @@ import Contactme from "@/components/Contactme.astro"
           <GitHubIcon class="size-4 md:size-6" />
           GitHub
         </SocialPill>
-        <SocialPill href="mailto:luisdna96@gmail.com">
+        <SocialPill href="mailto:luisdna96../..gmail.com">
           <MailIcon class="size-4 md:size-6" />
           Email me!
         </SocialPill>
@@ -78,7 +76,7 @@ import Contactme from "@/components/Contactme.astro"
         class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-white/90"
       >
         <Briefcase class="size-7" />
-        Work Experience
+        Experiencia Laboral
       </h2>
       <Experience />
     </SectionContainer>
@@ -88,7 +86,7 @@ import Contactme from "@/components/Contactme.astro"
         class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-white/80"
       >
         <CodeIcon class="size-7" />
-        Projects
+        Proyectos
       </h2>
       <Projects />
     </SectionContainer>
@@ -98,7 +96,7 @@ import Contactme from "@/components/Contactme.astro"
         class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-white/80"
       >
         <ProfileCheck class="size-7" />
-        About me
+        Sobre mi
       </h2>
       <Sobremi />
     </SectionContainer>
@@ -107,7 +105,7 @@ import Contactme from "@/components/Contactme.astro"
         class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-white/80"
       >
         <Contact class="size-7" />
-        Contact Me!
+        Contactame!
       </h2>
       <Contactme />
     </SectionContainer>
